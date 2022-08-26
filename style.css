@@ -1,0 +1,720 @@
+:root{
+    --Pink-: 322, 100%, 66%;
+    --VeryPaleCyan-: 193, 100%, 96%;
+    --VeryDarkCyan-: 192, 100%, 9%;
+    --GrayishBlue-: 208, 11%, 55%;
+    --font-: 'Poppins', sans-serif;
+}
+    .attribution { font-size: 11px; text-align: center; color:  #fff;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body, div, b, p, img, a, button{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header Styling */
+
+.Header{
+    background-image: linear-gradient(45deg, rgba(4, 130, 248, 0.1), rgba(4, 130, 248, 0.1)),
+    url(./images/bg-hero-desktop.svg);
+    padding: 50px;
+    height: 90vh;
+}
+.logo-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo-button > img{
+    width: 100px;
+    height: 20px;
+}
+.logo-button > button{
+    border: none;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 1px 1px 7px rgb(133, 130, 130);
+    font-family: var(--font-);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.Main-Head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.Main-Head-Text{
+    margin-top: -0px;
+    /* max-width: 300px; */
+    margin-right: 50px;
+}
+.Main-Head-Text > .bold{
+    font-size: 28px;
+    max-width: 300px;
+    font-weight: 900;
+    font-family: var(--font-);
+    margin-bottom: 20px;
+}
+.Main-Head-Text > .norm{
+    max-width: 400px;
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(var(--GrayishBlue-));
+}
+.Main-Head-Text > button{
+    width: 200px;
+    height: 35px;
+    color: white;
+    background-color: hsl(var(--Pink-));
+    border-radius: 20px;
+    border: none;
+    font-family: var(--font-);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Main-Head-Text > button:hover{
+    background-color: hsl(322, 100%, 76%);
+}
+.Main-Head-Illust > img{
+    width: 550px;
+    height: 400px;
+}
+
+/* Body Styling */
+
+/* Grow Styling */
+
+.Grow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 50px 10px 50px;
+    box-shadow: 0px 0px 5px rgb(146, 146, 146);
+    border-radius: 5px;
+}
+.Grow > .Text {
+    margin-right: 100px;
+}
+.Grow > .Text > p:nth-child(1){
+    font-family: var(--font-);
+    font-size: 24px;
+    font-weight: 900;
+}
+.Grow > .Text > p:nth-child(2){
+    max-width: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(var(--GrayishBlue-));
+    margin-top: 10px;
+}
+.Grow > .Illustration > img{
+    width: 400px;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+/* Flow Styling */
+
+.Flow{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 50px 10px 50px;
+    box-shadow: 0px 0px 5px rgb(146, 146, 146);
+    border-radius: 5px;
+}
+.Flow > .Text {
+    margin-left: 100px;
+}
+.Flow > .Text > p:nth-child(1){
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--font-);
+}
+.Flow > .Text >p:nth-child(2){
+    max-width: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(var(--GrayishBlue-));
+    margin-top: 10px;
+}
+.Flow > .Illustration > img{
+    width: 400px;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+/* Users Stlying */
+
+.Users{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 50px 10px 50px;
+    box-shadow: 0px 0px 5px rgb(146, 146, 146);
+    border-radius: 5px;
+}
+.Users > .Text {
+    margin-right: 100px;
+}
+.Users > .Text > p:nth-child(1){
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--font-);
+}
+.Users > .Text > p:nth-child(2){
+    max-width: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(var(--GrayishBlue-));
+    margin-top: 10px;
+}
+.Users > .Illustration > img{
+    width: 400px;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+/* Convince styling */
+
+.Convince{
+    margin: -360px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0px 0px 2px rgb(146, 146, 146);
+    border-radius: 5px;
+    width: fit-content;
+    background-color: white;
+}
+.Convince > .big{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: var(--font-);
+}
+.Convince > button{
+    width: 270px;
+    height: 50px;
+    font-family: var(--font-);
+    font-size: 16px;
+    color: white;
+    background-color: hsl(var(--Pink-));
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Convince > button:hover{
+    background-color: hsl(322, 100%, 76%);
+}
+
+/* Footer Styling */
+
+.Footer{
+    background-color: hsl(var(--VeryDarkCyan-));
+    color: hsl(var(--VeryPaleCyan-));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-top: 170px;
+    font-size: 12px;
+}
+.Footer > .About-Us{
+    max-width: 300px;
+}
+.Footer > .About-Us > img{
+    width: 90px;
+    margin-bottom: 20px;
+}
+.Footer > .About-Us > .Image-Text{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.Footer > .About-Us > .Image-Text > img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* .Footer > .About-Us > .Image-Text > p{
+    
+} */
+.Nav-1, .Nav-2{
+    display: flex;
+    flex-direction: column;
+}
+.Nav-1 > a, .Nav-2 > a{
+    margin: 3px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: hsl(var(--VeryPaleCyan-));
+    transition: all 0.3s ease-in-out;
+}
+.Nav-1 > a:hover, .Nav-2 > a:hover{
+    border-bottom: 1px solid hsl(var(--VeryPaleCyan-));
+}
+.Social-Copy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.Social{
+    padding-bottom: 90px;
+}
+.Social > img{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 320px){
+    .main-container{
+        width: 100%;
+    }
+    /* Head Styling */
+    .Header{
+        background-image: linear-gradient(45deg, rgba(4, 130, 248, 0.1), rgba(4, 130, 248, 0.1)),
+    url(./images/bg-hero-mobile.svg);
+    padding: 40px 20px 0;
+    }
+    .logo-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .logo-button > img{
+        width: 80px;
+    }
+    .logo-button > button{
+        width: 90px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .Main-Head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .Main-Head-Text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+    .Main-Head-Text > .bold{
+        text-align: center;
+        font-size: 22px;
+        max-width:none;
+    }
+    .Main-Head-Text > .norm{
+        text-align: center;
+        max-width: none;
+        min-width: 260px;
+    }
+    .Main-Head-Text > button{
+        margin-bottom: 30px;
+    }
+    .Main-Head-Illust > img{
+        width: 250px;
+        height: 180px;
+    }
+
+
+    /* Body Styling */
+
+    /* Grow Styling */
+
+    .Grow{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 15px 10px 15px;
+        padding: 30px;
+    }
+    .Grow > .Text {
+        margin-right: 0px;
+    }
+    .Grow > .Text > .big{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Grow > .Text > p{
+        max-width: 400px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .Grow > .Illustration > img{
+        width: 250px;
+        height: 180px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    /* Flow Styling */
+
+    .Flow{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 15px 10px 15px;
+        padding: 30px;
+    }
+    .Flow > .Text {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .Flow > .Text > .big{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Flow > .Text > p{
+        max-width: 400px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .Flow > .Illustration > img{
+        width: 250px;
+        height: 180px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    /* Users Styling */
+
+    .Users {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 15px 10px 15px;
+        padding: 30px;
+    }
+    .Users > .Text {
+        margin-right: 0px;
+    }
+    .Users > .Text > .big{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Users > .Text > p{
+        max-width: 400px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .Users > .Illustration > img{
+        width: 250px;
+        height: 180px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    /* Convince Styling */
+
+    .Convince{
+        margin: -700px auto 0px auto
+    }
+    .Convince > .big{
+        font-size: 14px;
+        text-align: center;
+    }
+    .Convince > button{
+        height: 35px;
+        width: 180px;
+        font-size: 10px;
+    }
+
+    /* Footer Styling */
+
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 150px;
+        padding: 100px 0px 20px 10px;
+    }
+    .Footer > .About-Us > .Image-Text > p{
+        margin-bottom: 15px;
+        margin-left: 10px;
+        max-width: 210px;
+    }
+    .Nav-1 > a, .Nav-2 > a{
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .Social-Copy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Social{
+        padding: 0px;
+        margin-top: 40px;
+    }
+    .Social-Copy > .Social > p{
+        font-size: 12px;
+        text-align: center;
+        
+    }
+}
+
+
+@media (max-width: 475px){
+    .main-container{
+        width: 100%;
+    }
+    /* Head Styling */
+    .Header{
+        background-image: linear-gradient(45deg, rgba(4, 130, 248, 0.1), rgba(4, 130, 248, 0.1)),
+    url(./images/bg-hero-mobile.svg);
+    padding: 20px;
+    }
+    .logo-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .logo-button > img{
+        width: 80px;
+    }
+    .logo-button > button{
+        width: 90px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .Main-Head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .Main-Head-Text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+    .Main-Head-Text > .bold{
+        text-align: center;
+        font-size: 22px;
+        max-width:none;
+    }
+    .Main-Head-Text > .norm{
+        text-align: center;
+        max-width: none;
+        min-width: 260px;
+    }
+    .Main-Head-Text > button{
+        margin-bottom: 30px;
+    }
+    .Main-Head-Illust > img{
+        width: 250px;
+        height: 180px;
+    }
+
+
+    /* Body Styling */
+
+    /* Grow Styling */
+
+    .Grow{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 15px 10px 15px;
+        padding: 30px;
+    }
+    .Grow > .Text {
+        margin-right: 0px;
+    }
+    .Grow > .Text > .big{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Grow > .Text > p{
+        max-width: 400px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .Grow > .Illustration > img{
+        width: 250px;
+        height: 180px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    /* Flow Styling */
+
+    .Flow{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 15px 10px 15px;
+        padding: 30px;
+    }
+    .Flow > .Text {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .Flow > .Text > .big{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Flow > .Text > p{
+        max-width: 400px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .Flow > .Illustration > img{
+        width: 250px;
+        height: 180px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    /* Users Styling */
+
+    .Users {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 15px 10px 15px;
+        padding: 30px;
+    }
+    .Users > .Text {
+        margin-right: 0px;
+    }
+    .Users > .Text > .big{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Users > .Text > p{
+        max-width: 400px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .Users > .Illustration > img{
+        width: 250px;
+        height: 180px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    /* Convince Styling */
+
+    .Convince{
+        margin: -700px auto 0px auto
+    }
+    .Convince > .big{
+        font-size: 14px;
+        text-align: center;
+    }
+    .Convince > button{
+        height: 35px;
+        width: 180px;
+        font-size: 10px;
+    }
+
+    /* Footer Styling */
+
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 150px;
+        padding: 100px 0px 20px 10px;
+    }
+    .Footer > .About-Us > .Image-Text > p{
+        margin-bottom: 15px;
+        margin-left: 10px;
+        max-width: 210px;
+    }
+    .Nav-1 > a, .Nav-2 > a{
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .Social-Copy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Social{
+        padding: 0px;
+        margin-top: 40px;
+    }
+    .Social-Copy > p:nth-child(2){
+        font-size: 12px;
+        text-align: center;
+        
+    }
+}
